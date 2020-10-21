@@ -34,6 +34,15 @@ body {
     border-radius: 50%;
 }
 
+.cube span:after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: #ECECEC;
+    border-radius: 50%;
+}
+
 .cube span:nth-child(1) {
     left: 50%;
     transform: rotate(-45deg) skew(15deg,15deg);
@@ -42,6 +51,11 @@ body {
 .cube span:nth-child(1):before {
     bottom: 20px;
     left: 20px;
+}
+
+.cube span:nth-child(1):after {
+    bottom: 68px;
+    left: 68px;
 }
 
 .cube span:nth-child(2) {
@@ -55,6 +69,11 @@ body {
     right: 20px;
 }
 
+.cube span:nth-child(2):after {
+    top: 68px;
+    right: 68px;
+}
+
 .cube span:nth-child(3) {
     top: 155px;
     left: 189px;
@@ -64,4 +83,9 @@ body {
 .cube span:nth-child(3):before {
     top: 20px;
     left: 20px;
+}
+
+.cube span:nth-child(3):after {
+    top: 68px;
+    left: 68px;
 }
