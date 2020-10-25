@@ -15,7 +15,7 @@ body {
     transform: translate(-100%,-100%);
 }
 
-.cube span {
+.cube .side {
     position: absolute;
     top: 0;
     display: block;
@@ -25,7 +25,7 @@ body {
     transform-style: preserve-3d;
 }
 
-.cube span:before {
+.cube .side:before {
     content: '';
     position: absolute;
     width: 165px;
@@ -34,7 +34,7 @@ body {
     border-radius: 50%;
 }
 
-.cube span:after {
+.cube .side:after {
     content: '';
     position: absolute;
     width: 70px;
@@ -43,12 +43,12 @@ body {
     border-radius: 50%;
 }
 
-.cube span:nth-child(1) {
+.cube .side:nth-child(1) {
     left: 50%;
     transform: rotate(-45deg) skew(15deg,15deg);
 }
 
-.cube span:nth-child(1):before {
+.cube .side:nth-child(1):before {
     left: 0;
     top: 0;
     bottom: 0;
@@ -56,7 +56,7 @@ body {
     margin: auto;
 }
 
-.cube span:nth-child(1):after {
+.cube .side:nth-child(1):after {
     left: 0;
     top: 0;
     bottom: 0;
@@ -64,13 +64,13 @@ body {
     margin: auto;
 }
 
-.cube span:nth-child(2) {
+.cube .side:nth-child(2) {
     top: 155px;
     left: 10px;
     transform: rotate(15deg) skew(15deg,15deg);
 }
 
-.cube span:nth-child(2):before {
+.cube .side:nth-child(2):before {
     left: 0;
     top: 0;
     bottom: 0;
@@ -78,7 +78,7 @@ body {
     margin: auto;
 }
 
-.cube span:nth-child(2):after {
+.cube .side:nth-child(2):after {
     left: 0;
     top: 0;
     bottom: 0;
@@ -86,13 +86,13 @@ body {
     margin: auto;
 }
 
-.cube span:nth-child(3) {
+.cube .side:nth-child(3) {
     top: 155px;
     left: 189px;
     transform: rotate(-15deg) skew(-15deg,-15deg);
 }
 
-.cube span:nth-child(3):before {
+.cube .side:nth-child(3):before {
     left: 0;
     top: 0;
     bottom: 0;
@@ -100,10 +100,47 @@ body {
     margin: auto;
 }
 
-.cube span:nth-child(3):after {
+.cube .side:nth-child(3):after {
     left: 0;
     top: 0;
     bottom: 0;
     right: 0;
     margin: auto;
+}
+
+.cube .side span {
+    display: table;
+    margin: auto;
+    position: relative;
+    width: 40px;
+    height: 24px;
+    top: 38%;
+    left: -15%;
+    z-index: 1;
+    transform: rotate(23deg);
+}
+
+.cube .side span:before, .cube .side span:after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 24px;
+    background: #FFAACC;
+    border-radius: 25px 0 0 25px;
+}
+
+.cube .side span:before {
+    left: 23px;
+    top: -5px;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: rotate(21deg);
+    transform: rotate(21deg);
+}
+
+.cube .side span:after {
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -webkit-transform: rotate(116deg);
+    transform: rotate(116 deg);
 }
