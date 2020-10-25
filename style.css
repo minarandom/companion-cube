@@ -65,8 +65,8 @@ body {
 }
 
 .cube .side:nth-child(2) {
-    top: 155px;
-    left: 10px;
+    top: 77.5%;
+    left: 5%;
     transform: rotate(15deg) skew(15deg,15deg);
 }
 
@@ -87,8 +87,8 @@ body {
 }
 
 .cube .side:nth-child(3) {
-    top: 155px;
-    left: 189px;
+    top: 77.5%;
+    left: 94.7%;
     transform: rotate(-15deg) skew(-15deg,-15deg);
 }
 
@@ -130,8 +130,8 @@ body {
 }
 
 .cube .side .heart:before {
-    left: 23px;
-    top: -5px;
+    left: 60%;
+    top: -20%;
     -webkit-transform-origin: 0 100%;
     transform-origin: 0 100%;
     -webkit-transform: rotate(21deg);
@@ -145,7 +145,7 @@ body {
     transform: rotate(116 deg);
 }
 
-.cube .side .line {
+.cube .side .pink-line {
     display: table;
     margin: auto;
     position: relative;
@@ -153,16 +153,62 @@ body {
     height: 200px;
 }
 
-.cube .side .line:before, .cube .side .line:after {
+.cube .side .pink-line:before, .cube .side .pink-line:after {
     content: '';
     position: absolute;
     width: 5px;
     height: 164.5px;
     background: #FFAACC;
-    top: -6px;
+    top: -3%;
 }
 
-.cube .side .line:after {
+.cube .side .pink-line:after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+
+.cube .side .first-grey-line {
+    display: table;
+    position: relative;
+    width: 10px;
+    height: 200px;
+    left: 32.7%;
+    z-index: -1;
+}
+
+.cube .side .first-grey-line:before, .cube .side .first-grey-line:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 200px;
+    background: #BDBDBD;
+    top: -112%;
+}
+
+.cube .side .first-grey-line:after {
+    left: 680%;
+}
+
+.cube .side .second-grey-line {
+    display: table;
+    position: relative;
+    width: 10px;
+    height: 200px;
+    left: 47.5%;
+    z-index: -1;
+}
+
+.cube .side .second-grey-line:before, .cube .side .second-grey-line:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 200px;
+    background: #BDBDBD;
+    top: -227%;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.cube .side .second-grey-line:after {
+    top: -193%;
 }
