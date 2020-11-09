@@ -183,6 +183,7 @@ body {
     height: 200px;
     background: #BDBDBD;
     top: -112%;
+    box-shadow: inset 2px 0 7px 0 #595959;
 }
 
 .cube .side .first-grey-line:after {
@@ -207,6 +208,7 @@ body {
     top: -227%;
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
+    box-shadow: inset 2px 0 7px 0 #595959;
 }
 
 .cube .side .second-grey-line:after {
