@@ -163,16 +163,14 @@ body {
     content: '';
     position: absolute;
     width: 5px;
-    /*height: 164.5px;*/
     background: #FFAACC;
-    /*top: -3%;*/
+    box-shadow: inset 3px 0 6px 0 #979797;
 }
 
 .cube .side .pink-line:after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: -1%;
-    /*left: 3px;*/
 }
 
 .cube .side .first-pink-line:after {
