@@ -54,6 +54,7 @@ body {
     bottom: 0;
     right: 0;
     margin: auto;
+    box-shadow: inset -7px 5px 0 #717171;
 }
 
 .cube .side:nth-child(1):after {
@@ -77,6 +78,7 @@ body {
     bottom: 0;
     right: 0;
     margin: auto;
+    box-shadow: inset 6px -7px 0 #717171;
 }
 
 .cube .side:nth-child(2):after {
@@ -100,6 +102,7 @@ body {
     bottom: 0;
     right: 0;
     margin: auto;
+    box-shadow: inset -3px 2px 0 #717171;
 }
 
 .cube .side:nth-child(3):after {
@@ -160,14 +163,50 @@ body {
     content: '';
     position: absolute;
     width: 5px;
-    height: 164.5px;
+    /*height: 164.5px;*/
     background: #FFAACC;
-    top: -3%;
+    /*top: -3%;*/
 }
 
 .cube .side .pink-line:after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
+    top: -1%;
+    /*left: 3px;*/
+}
+
+.cube .side .first-pink-line:after {
+    height: 157px;
+    right: 41%;
+}
+
+.cube .side .first-pink-line:before {
+    height: 159px;
+    top: 0.1%;
+    right: 100%;
+}
+
+.cube .side .second-pink-line:after {
+    height: 157px;
+    left: 79%;
+    top: -3%;
+}
+
+.cube .side .second-pink-line:before {
+    height: 157px;
+    top: -6px;
+    left: 3%;
+}
+
+.cube .side .third-pink-line:after {
+    height: 161px;
+    top: -3%;
+    right: 21%;
+}
+
+.cube .side .third-pink-line:before {
+    height: 162px;
+    top: -2%;
 }
 
 .cube .side .first-grey-line {
