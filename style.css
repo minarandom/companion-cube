@@ -70,6 +70,7 @@ body {
     top: 77.5%;
     left: 5%;
     transform: rotate(15deg) skew(15deg,15deg);
+    background: #D8D8D8;
 }
 
 .cube .side:nth-child(2):before {
@@ -78,7 +79,8 @@ body {
     bottom: 0;
     right: 0;
     margin: auto;
-    box-shadow: inset 9px -13px 0 #D4D4D4;
+    background: #ACACAC;
+    box-shadow: inset 9px -13px 0 #C3C2C2;
 }
 
 .cube .side:nth-child(2):after {
@@ -87,7 +89,8 @@ body {
     bottom: 0;
     right: 0;
     margin: auto;
-    box-shadow: 4.5px -4.5px #D4D4D4;
+    background: #D8D8D8;
+    box-shadow: 4.5px -4.5px #C3C2C2;
 }
 
 .cube .side:nth-child(3) {
@@ -151,6 +154,10 @@ body {
     transform: rotate(116 deg);
 }
 
+.cube .shadow-side .heart:before, .cube .shadow-side .heart:after {
+    background: #FF9CC4;
+}
+
 .cube .side .pink-line {
     display: table;
     margin: auto;
@@ -171,6 +178,11 @@ body {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: -1%;
+}
+
+.cube .shadow-side .second-pink-line:before, .cube .side .second-pink-line:after {
+    background: #FF9CC4;
+    box-shadow: inset 3px 0 6px 0 #898989;
 }
 
 .cube .side .first-pink-line:after {
@@ -254,4 +266,14 @@ body {
 
 .cube .side .second-grey-line:after {
     top: -193%;
+}
+
+.cube .shadow-side .first-grey-line:after, .cube .shadow-side .first-grey-line:before {
+    background: #B6B6B6;
+    box-shadow: inset 3px 0 6px 0 #909090;
+}
+
+.cube .shadow-side .second-grey-line:after, .cube .shadow-side .second-grey-line:before {
+    background: #B6B6B6;
+    box-shadow: inset 3px 0 6px 0 #909090;
 }
